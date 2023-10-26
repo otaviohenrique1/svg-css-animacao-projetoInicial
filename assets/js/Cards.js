@@ -1,15 +1,21 @@
 class Cards {
   constructor() {
-    // 
+    this.posicaoSectionDicas = document.getElementById("section-dicas");
+    this.cardEsq = document.querySelector(".card-esq");
+    this.cardDir = document.querySelector(".card-dir");
+  }
+
+  scrollCards() {
+    window.requestAnimationFrame(this.calculoScroll.bind(this));
   }
 
   calculoScroll() {
-    const posicao = document.getElementById("section-dicas").getBoundingClientRect()["y"];
+    const posicao = posicaoSectionDicas.getBoundingClientRect()["y"];
     console.log(posicao);
     if (posicao <= 25) {
       // console.log("Chegou");
-      document.querySelector(".card-esq").style.transform = `translate(${posicao}%)`;
-      document.querySelector(".card-dir").style.transform = `translate(${posicao}%)`;
+      cardEsq.style.transform = `translate(${((-posicao) + 25) / 10}%)`;
+      cardDir.style.transform = `translate(${(posicao - 25) / 10}%)`;
     }
   }
 }
