@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1552.61 980">
+<svg id="praia" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="100 0 1300 980">
   <defs>
     <style>
       .cls-1, .cls-12, .cls-20 {
@@ -212,6 +212,10 @@
         animation: movimento-nuvem-dir 60s ease-in-out infinite alternate;
       }
 
+      #praia {
+        animation: inicia-pagina 2.5s ease-in-out forwards 1;
+      }
+
       @keyframes movimento-caiaques-1e2 {
         to {
           transform: translate(4px, -6px);
@@ -241,6 +245,13 @@
           transform: translate(400px);
         }
       }
+
+      @keyframes inicia-pagina {
+        from {
+          transform: translate(0, -2000px);
+        }
+      }
+
     </style>
     <linearGradient id="linear-gradient" x1="700" y1="588.28" x2="700" y2="375.14" gradientTransform="translate(0 384.72)" gradientUnits="userSpaceOnUse">
       <stop offset="0.19" stop-color="#ffead4"/>

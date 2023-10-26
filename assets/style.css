@@ -6,6 +6,7 @@ body {
 
 .container-header {
   width: 100vw;
+  /* border: #BE253F 1px solid; */
 }
 
 .lett-header {
@@ -18,7 +19,7 @@ body {
   animation: lett-preenchimento 0.5s ease-in-out forwards 4s;
 }
 
-.lett-header {
+.lett-header path {
   stroke-width: 2px;
   stroke: #BE253F;
   stroke-dasharray: 3000;
