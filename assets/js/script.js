@@ -23,12 +23,10 @@ class Cards {
   }
 
   calculoScroll() {
-    const posicao = this.posicaoSectionDicas.getBoundingClientRect()["y"];
-    // console.log(posicao);
-    if (posicao <= 25) {
-      // console.log("Chegou");
-      this.cardEsq.style.transform = `translate(${((-posicao) + 25) / 10}%)`;
-      this.cardDir.style.transform = `translate(${(posicao - 25) / 10}%)`;
+    const posicao = this.posicaoSectionDicas.getBoundingClientRect()['y'];
+    if (posicao >= 25) {
+        this.cardEsq.style.transform = `translate(${((-posicao) + 25)/10}%)`;
+        this.cardDir.style.transform = `translate(${(posicao - 25)/10}%)`;
     }
   }
 }
@@ -42,7 +40,8 @@ class Icones {
     // console.log(this.listaIcones);
     gsap.to(this.listaIcones, {
       rotation: 360,
-      duration: 2
+      duration: 2,
+      opacity: 0.5
     });
   }
 }

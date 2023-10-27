@@ -61,6 +61,10 @@ p {
   margin: 20px;
 }
 
+.div-teste {
+  height: 500px;
+}
+
 @keyframes lett-preenchimento {
   to {
     fill: #BE253F;
