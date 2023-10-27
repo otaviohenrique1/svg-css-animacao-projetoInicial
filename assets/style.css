@@ -65,6 +65,11 @@ p {
   width: 60%;
   margin: auto;
   display: block;
+  fill: #FFFFFF;
+  opacity: 0.5;
+  position: absolute;
+  left: 20%;
+  margin-top: 20%;
 }
 
 @keyframes lett-preenchimento {

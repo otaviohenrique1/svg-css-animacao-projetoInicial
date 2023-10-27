@@ -1,13 +1,17 @@
 // import { Cards } from "./Cards";
 // import { Icones } from "./Icones";
+// import { Footer } from "./Footer";
 
 // window.onload => Qunado a janela for aberta
 window.onload = () => {
-  let animaCards = new Cards();
+  const animaCards = new Cards();
   document.addEventListener("scroll", animaCards.scrollCards.bind(animaCards));
 
-  let icones = new Icones();
+  const icones = new Icones();
   icones.animaIcones();
+  
+  const footer = new Footer();
+  footer.efeitoOnda();
 };
 
 
@@ -45,6 +49,23 @@ class Icones {
       repeat: -1,
       yoyo: true,
       duration: 0.5,
+    });
+  }
+}
+
+class Footer {
+  constructor() {
+    this.filtroTurbulencia = document.querySelector("#filtro-turbulencia");
+  }
+
+  efeitoOnda() {
+    gsap.to(this.filtroTurbulencia, {
+      repeat: -1,
+      yoyo: true,
+      duration: 20,
+      attr: {
+        baseFrequency: 0.03,
+      }
     });
   }
 }
