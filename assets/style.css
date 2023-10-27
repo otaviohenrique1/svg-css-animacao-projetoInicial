@@ -72,6 +72,10 @@ p {
   margin-top: 20%;
 }
 
+.footer-infos {
+  text-align: center;
+}
+
 @keyframes lett-preenchimento {
   to {
     fill: #BE253F;
