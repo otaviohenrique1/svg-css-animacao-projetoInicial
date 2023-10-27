@@ -39,9 +39,12 @@ class Icones {
   animaIcones() {
     // console.log(this.listaIcones);
     gsap.to(this.listaIcones, {
-      rotation: 360,
-      duration: 2,
-      opacity: 0.5
+      // rotation: 360,
+      // opacity: 0.5,
+      scale: 0.95,
+      repeat: -1,
+      yoyo: true,
+      duration: 0.5,
     });
   }
 }
