@@ -1,4 +1,4 @@
-# svg-css-animacao-projeto-inicial
+# svg-css-animacao-projetoInicial
 
 ## Descrição
 
